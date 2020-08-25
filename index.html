@@ -1,44 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Google</title>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul class="flex, top-right">
-                    <li class="list-items">Gmail</li>
-                    <li class="list-items">Images</li>
-                    <a href="#" class="list-items, sign-in">Sign In</a>
-                </ul>
-            </nav>
-        </header>
-        <div class="logo-div flex">
-            <img src="Google Logo.png" alt="Google Logo" id="logo">
-        </div>
-        <div class="form-div">
-            <form action="#" class="search-bar">
-                <i class="fas fa-search"></i>
-                <input type="search" name="search" id="search">
-                <div class="lower-buttons">
-                    <p class="buttons">Google Search</p>
-                    <p class="buttons">I'm Feeling Lucky</p>
-                </div>
-            </form>
-        </div>    
-        <footer class="flex">
-            <ul class="flex, bottom-left">
-                <li class="list-items">Advertising</li>
-                <li class="list-items">Business</li>
-                <li class="list-items">How Search Works</li>
-            </ul>
-            <ul class="flex, bottom-right">
-                <li class="list-items">Privacy</li>
-                <li class="list-items">Terms</li>
-                <li class="list-items">Settings</li>
-            </ul>
-        </footer>
-    </body>
+<head>
+	<title>Google</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="Google Icon.png" type="image/x-icon">
+	<meta charset="utf-8">
+</head>
+<body>
+
+<header>
+	<nav class="flex">
+		<div class="list-items">
+			<li>About</li>
+			<li>Store</li>
+		</div>
+
+		<div class="list-items">
+			<li>Gmail</li>
+			<li>Images</li>
+			<li>
+				<div class="tier flex">
+					<div class="dots"></div>
+					<div class="dots"></div>
+					<div class="dots"></div>
+				</div>
+				<div class="tier flex">
+					<div class="dots"></div>
+					<div class="dots"></div>
+					<div class="dots"></div>
+				</div>
+				<div class="tier flex">
+					<div class="dots"></div>
+					<div class="dots"></div>
+					<div class="dots"></div>
+				</div>
+			</li>
+			<li id="sign-in">Sign In</li>
+		</div>
+	</nav>
+</header>
+
+<div class="container">
+	<div class="wrapper logo-div">
+		<img src="Google Logo.png" alt="Google Logo">
+	</div>
+
+	<div class="wrapper search-bar">
+		<form action="#" method="GET">
+			<input type="text" id="search-box">
+		</form>
+	</div>
+	<div class="lower-buttons">
+		<p>Google Search</p>
+		<p>I'm Feeling Lucky</p>
+	</div>
+	<p id="lower-text">Google Offered in <a href="#">English</a></p>
+</div>
+
+<footer>
+	<ul>
+		<li id="location">Nigeria</li>
+	</ul>
+
+	<div class="footer-nav">
+		<ul class="footer-list">
+			<li>Advertising</li>
+			<li>Business</li>
+			<li>How Search Works</li>
+		</ul>
+
+		<ul class="footer-list">
+			<li>Privacy</li>
+			<li>Terms</li>
+			<li>Settings</li>
+		</ul>
+	</div>		
+</footer>
+
+</body>
 </html>

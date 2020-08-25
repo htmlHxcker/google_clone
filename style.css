@@ -1,81 +1,86 @@
 :root{
-    box-sizing: border-box;
+    width: 100%;
+    font-family:arial,sans-serif;
 }
-
 .flex{
     display: flex;
     justify-content: space-between;
-
-}
-/* Top Menu */
-.top-right{
-    text-align: right;
-    list-style: none;
 }
 .list-items{
     display: inline-flex;
-    justify-content: space-between;
-    padding:0 1em;
-}
-
-.sign-in{
-    padding: 0.5em 0.8em;
-    background:linear-gradient(#4387fd, #4683ea);
-    color:white;
-    text-decoration: none;
-}
-/*Logo */
-.logo-div{
-    align-items: center;
     justify-content: center;
-    margin: 6em 10em 5em 10em;
-}
-
-#logo{
-    display: block;
-    width: auto;
-    height: auto;
-}
-/*Search and Buttons */
-.form-div{
-    display: block;
-    text-align: center;
-}
-#search{
-    border-radius: 2em;
-    width: 50vw;
-    height: 5vh;
-    margin: 0 12em 3em 10em;
-    display: inline-flex;
-    justify-content: center;
-}
-#search:hover{
-    box-shadow: 0.5em 0.5em rgba(0, 0, 0, 0.1);
-}
-.lower-buttons{
-    display: flex;
-    justify-content: center;
-}
-.buttons{
-    background-color:rgba(0, 0, 0, 0.1);
-    width: 28vw;
-    text-align: center;
-    padding: .5em 1em;
-    margin: 0.5em 1em;
-}
-.buttons:hover{
-    border-color: #333
-}
-footer{
-margin:22vh 0 0 0;
-background-color: #e9d6d6b6;
-}
-
- .bottom-left, .bottom-right{
-        text-align: right;
-        list-style: none;
-}
-.bottom-right{
-    text-align: left;
     list-style: none;
 }
+li{
+    margin: 0.5em 1em;
+}
+
+.dots{
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+    margin: 2px;
+}
+.tier{
+    align-items: center;
+}
+#sign-in{
+    background: rgb(66, 133, 244);
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0.8em;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+.logo-div{
+    margin-bottom: -48vh;
+}
+#search-box{
+    width: 45vw;
+    height: 30px;
+    border-radius:20px;
+    outline-style: none;
+}
+#search-box:hover{
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1)
+}
+.lower-buttons{
+   margin-top: -25vh; 
+   display: flex;
+   justify-content: center;
+
+}
+.lower-buttons > p{
+    background-color: #f2f2f2;
+    padding: 0.5em ;
+    margin: 0.2em;
+}
+.lower-buttons >p:hover{
+    border: 0.01em rgba(0, 0, 0, 0.1) solid;
+}
+#lower-text{
+    text-align: center;
+}
+.footer-nav{
+    position: fixed;
+    bottom: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow:hidden;
+}
+footer{
+    background-color: #f2f2f2;
+    margin-top: 7em;
+}
+#location, .footer-list{
+    list-style: none;
+    display: inline-flex;
+}
+
